@@ -32,4 +32,6 @@ print(ip)
 
 print(ip.with_netmask)
 
+print(f'This is the IP')
+print(ip)
 
