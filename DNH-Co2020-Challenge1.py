@@ -17,6 +17,9 @@ devices = ({'CAT9300':'XVNM1245ERGC'}, {'ISR4331':'VNMM8742THBX'}, {'NGFW2120':'
 device = random.sample(devices, 1) [0]
 device = list(device.values())[0]
 
+print('Serial Number:',(device))
+
+
 # Function for converting CIDR notation into 32-bit netmask (nothing to do here)
 def cidr_to_netmask(ip_str):
     ip = ipaddress.IPv4Network(ip_str)
